@@ -1,0 +1,49 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: sandybrown;
+}
+
+.cal-body {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: white;
+  height: 85vh;
+  padding-top: 30px;
+}
+
+.cal-body input:is(.text) {
+  border-radius: 10px;
+  width: 92%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px darkgrey;
+
+  margin-left: 12px;
+}
+
+.cal-body input:not(.text) {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.cal-body input:hover:not(.text, .op) {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cal-body .equal {
+  width: 155px;
+  border-radius: 20%;
+}
